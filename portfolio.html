@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — HiCircus Studio</title>
+  <meta name="description" content="Architectural visualization, virtual reality and brand strategy projects by HiCircus Studio.">
+  <meta name="theme-color" content="#1d1b19">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("js-reveal");
+      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container site-header__bar">
+      <a class="site-header__logo" href="index.html" aria-label="HiCircus Studio — home">
+        <img src="assets/images/hicircus-logo-light.svg" alt="HiCircus Studio" width="132" height="40">
+      </a>
+
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="site-header__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a class="site-nav__link" href="about.html">About</a></li>
+          <li><a class="site-nav__link" href="blog.html">Blog</a></li>
+          <li><a class="site-nav__link" href="pricing.html">Pricing</a></li>
+        </ul>
+        <a class="btn btn--soft site-nav__cta" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="page-hero__eyebrow">Our Work</p>
+        <h1 class="page-hero__title" id="page-title"><span class="line"><span class="line__inner">Portfolio</span></span></h1>
+        <p class="page-hero__lead">Architecture, interiors and places, visualized before they exist.</p>
+      </div>
+    </section>
+
+    <section class="portfolio" aria-label="Projects" data-portfolio>
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filter projects by service" data-filters hidden>
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="filter__count" data-filter-count="all"></span></button>
+          <button class="filter" type="button" data-filter="visualization" aria-pressed="false">Visualization <span class="filter__count" data-filter-count="visualization"></span></button>
+          <button class="filter" type="button" data-filter="virtual-reality" aria-pressed="false">Virtual Reality <span class="filter__count" data-filter-count="virtual-reality"></span></button>
+          <button class="filter" type="button" data-filter="brand-strategy" aria-pressed="false">Brand Strategy <span class="filter__count" data-filter-count="brand-strategy"></span></button>
+        </div>
+        <p class="visually-hidden" aria-live="polite" data-portfolio-status></p>
+
+        <ul class="projects" data-projects>
+          <li class="project-card" id="etheric-residence" data-category="visualization">
+            <a class="project-card__link" href="etheric-residence.html" aria-labelledby="etheric-residence-title">
+              <article>
+                <div class="project-card__media">
+                  <img class="project-card__image" src="assets/images/etheric-residence-night.webp" width="3360" height="1416" loading="lazy" alt="Etheric Residence at night — warm light glowing through tall windows of a modern stone villa" style="object-position: 62% 50%">
+                </div>
+                <p class="project-card__meta"><span>01</span><span>Visualization</span></p>
+                <h2 class="project-card__title" id="etheric-residence-title">Etheric Residence</h2>
+              </article>
+            </a>
+          </li>
+          <li class="project-card" id="monolith-atelier" data-category="virtual-reality">
+            <article aria-labelledby="monolith-atelier-title">
+              <div class="project-card__media">
+                <img class="project-card__image" src="assets/images/etheric-residence-facade.webp" width="1932" height="1350" loading="lazy" alt="Angular white façade with deep-set windows">
+              </div>
+              <p class="project-card__meta"><span>02</span><span>Virtual Reality</span></p>
+              <h2 class="project-card__title" id="monolith-atelier-title">Monolith Atelier</h2>
+            </article>
+          </li>
+          <li class="project-card" id="aurora-tower" data-category="brand-strategy">
+            <article aria-labelledby="aurora-tower-title">
+              <div class="project-card__media">
+                <img class="project-card__image" src="assets/images/etheric-residence-glass.webp" width="1648" height="1986" loading="lazy" alt="Glass tower corner lit from within at dusk, viewed from below">
+              </div>
+              <p class="project-card__meta"><span>03</span><span>Brand Strategy</span></p>
+              <h2 class="project-card__title" id="aurora-tower-title">Aurora Tower</h2>
+            </article>
+          </li>
+          <li class="project-card" id="kinetic-pavilion" data-category="visualization">
+            <article aria-labelledby="kinetic-pavilion-title">
+              <div class="project-card__media">
+                <img class="project-card__image" src="assets/images/hero-poster.webp" width="1920" height="1080" loading="lazy" alt="Flowing dark sculpture with glossy ribbons and small spheres" style="object-position: 68% 50%">
+              </div>
+              <p class="project-card__meta"><span>04</span><span>Visualization</span></p>
+              <h2 class="project-card__title" id="kinetic-pavilion-title">Kinetic Pavilion</h2>
+            </article>
+          </li>
+          <li class="project-card" id="aurum-gallery" data-category="visualization">
+            <article aria-labelledby="aurum-gallery-title">
+              <div class="project-card__media">
+                <img class="project-card__image" src="assets/images/service-architectural-visualization.webp" width="512" height="640" loading="lazy" alt="Wireframe skull rendered in glowing gold mesh">
+              </div>
+              <p class="project-card__meta"><span>05</span><span>Visualization</span></p>
+              <h2 class="project-card__title" id="aurum-gallery-title">Aurum Gallery</h2>
+            </article>
+          </li>
+          <li class="project-card" id="lumen-immersive" data-category="virtual-reality">
+            <article aria-labelledby="lumen-immersive-title">
+              <div class="project-card__media">
+                <img class="project-card__image" src="assets/images/service-virtual-reality.webp" width="576" height="384" loading="lazy" alt="Figure wearing a virtual reality headset in cool blue light">
+              </div>
+              <p class="project-card__meta"><span>06</span><span>Virtual Reality</span></p>
+              <h2 class="project-card__title" id="lumen-immersive-title">Lumen Immersive</h2>
+            </article>
+          </li>
+          <li class="project-card" id="maison-signature" data-category="brand-strategy">
+            <article aria-labelledby="maison-signature-title">
+              <div class="project-card__media">
+                <img class="project-card__image" src="assets/images/service-brand-strategy.webp" width="576" height="577" loading="lazy" alt="Brushed-metal button engraved with the word Branding">
+              </div>
+              <p class="project-card__meta"><span>07</span><span>Brand Strategy</span></p>
+              <h2 class="project-card__title" id="maison-signature-title">Maison Signature</h2>
+            </article>
+          </li>
+        </ul>
+
+        <div class="projects__more">
+          <button class="projects__more-button" type="button" data-show-more hidden>Show more projects</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2024 HiCircus Studio. Digital curation for elite visualization.</p>
+        <ul class="site-footer__links" aria-label="Social and legal">
+          <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/hicircus-studio" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@hicircus.studio" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@hicircus.studio" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+        <a class="icon-circle icon-circle--ghost site-footer__top-link" href="#top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 21.3V3M2.8 12.2 12 3l9.2 9.2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

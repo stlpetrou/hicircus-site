@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Architecture — HiCircus Studio</title>
+  <meta name="description" content="3D architectural visualization by HiCircus Studio: photorealistic exteriors, interiors, aerial views and real estate renders.">
+  <meta name="theme-color" content="#1d1b19">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("js-reveal");
+      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container site-header__bar">
+      <a class="site-header__logo" href="index.html" aria-label="HiCircus Studio — home">
+        <img src="assets/images/hicircus-logo-light.svg" alt="HiCircus Studio" width="132" height="40">
+      </a>
+
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="site-header__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="site-nav__link" href="about.html">About</a></li>
+          <li><a class="site-nav__link" href="blog.html">Blog</a></li>
+          <li><a class="site-nav__link" href="pricing.html">Pricing</a></li>
+        </ul>
+        <a class="btn btn--soft site-nav__cta" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="page-hero__eyebrow">01 &middot; Service</p>
+        <h1 class="page-hero__title" id="page-title"><span class="line"><span class="line__inner">Architecture</span></span></h1>
+        <p class="page-hero__lead">Photorealistic 3D visualization for buildings, interiors and real estate — from the first concept render to the final sales gallery.</p>
+      </div>
+    </section>
+
+    <figure class="about-band" data-band>
+      <img class="about-band__image" src="assets/images/etheric-residence-night.webp" width="3360" height="1416" loading="lazy" alt="Etheric Residence at night — warm light glowing through tall windows of a modern stone villa" style="object-position: 62% 50%">
+    </figure>
+
+    <section class="service-detail" aria-labelledby="service-detail-title">
+      <div class="container">
+        <div class="service-detail__head">
+          <p class="eyebrow" data-reveal="up">What's Included</p>
+          <h2 class="service-detail__title" id="service-detail-title" data-reveal="lines"><span class="line"><span class="line__inner">The Full Scope</span></span></h2>
+        </div>
+        <div class="service-detail-grid">
+          <div class="service-detail-card" data-reveal="up">
+            <p class="service-detail-card__index">01</p>
+            <h3 class="service-detail-card__title">Photorealistic Exterior Renders</h3>
+            <p class="service-detail-card__text">Hero stills that carry a building's story — material, light and context composed like a photo shoot, not a technical drawing.</p>
+          </div>
+          <div class="service-detail-card" data-reveal="up">
+            <p class="service-detail-card__index">02</p>
+            <h3 class="service-detail-card__title">Interior Renders</h3>
+            <p class="service-detail-card__text">Lived-in spaces — furniture, finishes and light worked out room by room, so a space sells before it's built.</p>
+          </div>
+          <div class="service-detail-card" data-reveal="up">
+            <p class="service-detail-card__index">03</p>
+            <h3 class="service-detail-card__title">Aerial &amp; Landscape Visualization</h3>
+            <p class="service-detail-card__text">Site context, massing and landscaping shown at scale — how a project sits in its surroundings, not just on its own.</p>
+          </div>
+          <div class="service-detail-card" data-reveal="up">
+            <p class="service-detail-card__index">04</p>
+            <h3 class="service-detail-card__title">Real Estate Visualization</h3>
+            <p class="service-detail-card__text">A consistent set of images built for the sales journey — listing pages, brochures and the sales gallery wall alike.</p>
+          </div>
+          <div class="service-detail-card" data-reveal="up">
+            <p class="service-detail-card__index">05</p>
+            <h3 class="service-detail-card__title">Architectural 3D Modeling</h3>
+            <p class="service-detail-card__text">Precise models built from drawings — the foundation every render, walkthrough and VR experience is produced from, including surrounding environment and site assets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="project-back" aria-label="Back to services">
+      <a class="work__more-link" href="index.html#expertise">Back to Our Expertise</a>
+    </nav>
+
+    <!-- Closing call to action -->
+    <section class="cta-band" aria-labelledby="cta-band-title">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__title" id="cta-band-title" data-reveal="lines"><span class="line"><span class="line__inner">Have a project <span class="accent">in mind?</span></span></span></h2>
+        <a class="btn btn--soft cta-band__button" href="contact.html" data-reveal="up">Start a Conversation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2024 HiCircus Studio. Digital curation for elite visualization.</p>
+        <ul class="site-footer__links" aria-label="Social and legal">
+          <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/hicircus-studio" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@hicircus.studio" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@hicircus.studio" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+        <a class="icon-circle icon-circle--ghost site-footer__top-link" href="#top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 21.3V3M2.8 12.2 12 3l9.2 9.2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

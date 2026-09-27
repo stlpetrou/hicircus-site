@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — HiCircus Studio</title>
+  <meta name="description" content="Two ways to work with HiCircus Studio: a single fixed-price project, or a Credit Bank package for ongoing architecture, product, motion and AI visualization work.">
+  <meta name="theme-color" content="#1d1b19">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("js-reveal");
+      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container site-header__bar">
+      <a class="site-header__logo" href="index.html" aria-label="HiCircus Studio — home">
+        <img src="assets/images/hicircus-logo-light.svg" alt="HiCircus Studio" width="132" height="40">
+      </a>
+
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="site-header__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="site-nav__link" href="about.html">About</a></li>
+          <li><a class="site-nav__link" href="blog.html">Blog</a></li>
+          <li><a class="site-nav__link" href="pricing.html" aria-current="page">Pricing</a></li>
+        </ul>
+        <a class="btn btn--soft site-nav__cta" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="page-hero__eyebrow">Pricing</p>
+        <h1 class="page-hero__title" id="page-title"><span class="line"><span class="line__inner">Two Ways to Begin</span></span></h1>
+        <p class="page-hero__lead">Whether you need one polished hero image or a steady stream of visuals across many projects, there's a path that fits. Every engagement is scoped individually, so here's how each way of working actually runs — talk to us for a quote tailored to your project.</p>
+      </div>
+    </section>
+
+    <!-- Pricing cards -->
+    <section class="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="pricing__head">
+          <p class="eyebrow" data-reveal="up">Choose Your Path</p>
+          <h2 class="pricing__title" id="pricing-title" data-reveal="lines"><span class="line"><span class="line__inner">Per Project or</span></span> <span class="line"><span class="line__inner">Credit Bank</span></span></h2>
+        </div>
+
+        <div class="pricing__grid">
+          <article class="pricing-card" data-reveal="up">
+            <p class="pricing-card__label">Per Project</p>
+            <p class="pricing-card__price">One Brief, One Price</p>
+            <p class="pricing-card__note">For a single, self-contained deliverable — a hero render, a short film, a VR walkthrough. Scope and cost are fixed before any work begins.</p>
+            <ul class="pricing-card__list">
+              <li>Scope, deliverables and price agreed in writing upfront</li>
+              <li>50% deposit to begin, 50% on final delivery</li>
+              <li>Indicative 15-day turnaround once your materials are in</li>
+              <li>One consolidated round of revisions on draft renders</li>
+            </ul>
+            <a class="btn btn--soft" href="contact.html">Request a Quote</a>
+          </article>
+
+          <article class="pricing-card" data-reveal="up">
+            <p class="pricing-card__label">Credit Bank</p>
+            <p class="pricing-card__price">Buy Time, Spend Flexibly</p>
+            <p class="pricing-card__note">For studios and developers with an ongoing pipeline. Prepay a balance of studio hours once, then draw on it project after project.</p>
+            <ul class="pricing-card__tiers">
+              <li class="pricing-tier">
+                <span class="pricing-tier__name">20 Credits</span>
+                <span class="pricing-tier__price">2 mo. &middot; 2h revisions</span>
+              </li>
+              <li class="pricing-tier">
+                <span class="pricing-tier__name">40 Credits <span class="pricing-tier__badge">Most Popular</span></span>
+                <span class="pricing-tier__price">2 mo. &middot; 3h revisions</span>
+              </li>
+              <li class="pricing-tier">
+                <span class="pricing-tier__name">80 Credits</span>
+                <span class="pricing-tier__price">3 mo. &middot; 4h revisions</span>
+              </li>
+              <li class="pricing-tier">
+                <span class="pricing-tier__name">160+ Credits</span>
+                <span class="pricing-tier__price">3 mo. &middot; 6h+ revisions</span>
+              </li>
+            </ul>
+            <a class="btn btn--soft" href="contact.html">Ask About Credit Bank</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How credits work -->
+    <section class="credits-steps" aria-labelledby="credits-steps-title">
+      <div class="container">
+        <div class="credits-steps__head">
+          <p class="eyebrow" data-reveal="up">Credit Bank, Explained</p>
+          <h2 class="credits-steps__title" id="credits-steps-title" data-reveal="lines"><span class="line"><span class="line__inner">How It Works</span></span></h2>
+          <p class="pricing__lead">One Credit represents one hour of dedicated studio time, billed in half-hour increments. It's a way to prepay for a block of our time and spend it across as many or as few deliverables as your pipeline needs.</p>
+        </div>
+        <ol class="credits-steps__list">
+          <li data-reveal="up">
+            <p class="credits-step__index">01</p>
+            <h3 class="credits-step__title">Send your brief</h3>
+            <p class="credits-step__text">Tell us what you need. We assess it and send back an estimate of the credits required plus a delivery timeline.</p>
+          </li>
+          <li data-reveal="up">
+            <p class="credits-step__index">02</p>
+            <h3 class="credits-step__title">Approve &amp; we begin</h3>
+            <p class="credits-step__text">Confirm the estimate and timeline in writing and we start, drawing down your balance as the work happens. Smaller ad-hoc requests are deducted directly once done.</p>
+          </li>
+          <li data-reveal="up">
+            <p class="credits-step__index">03</p>
+            <h3 class="credits-step__title">Top up or roll over</h3>
+            <p class="credits-step__text">Running low mid-project? Top up to cover the difference. Upgrade to a larger package before your current one expires and any unused credits carry over.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pricing-faq" aria-labelledby="pricing-faq-title">
+      <div class="container">
+        <div class="pricing-faq__head">
+          <p class="eyebrow" data-reveal="up">Good to Know</p>
+          <h2 class="pricing-faq__title" id="pricing-faq-title" data-reveal="lines"><span class="line"><span class="line__inner">Questions</span></span></h2>
+        </div>
+        <div class="pricing-faq__list">
+          <div class="pricing-faq__item" data-reveal="up">
+            <h3 class="pricing-faq__question">What exactly is a credit?</h3>
+            <p class="pricing-faq__answer">One Credit equals one hour of studio time under normal working hours, billed in 30-minute (0.5 credit) increments — whether that's a quick support request or time logged against a larger project.</p>
+          </div>
+          <div class="pricing-faq__item" data-reveal="up">
+            <h3 class="pricing-faq__question">Do credits expire?</h3>
+            <p class="pricing-faq__answer">Yes. 20 and 40-credit packages are valid for 2 months from activation; 80-credit and larger packages for 3 months. Unused credits lapse at the end of that window — unless you upgrade to a larger package before it expires, in which case any remaining balance carries over.</p>
+          </div>
+          <div class="pricing-faq__item" data-reveal="up">
+            <h3 class="pricing-faq__question">What if a project runs over my balance?</h3>
+            <p class="pricing-faq__answer">We'll flag it before you go over, never after. Work pauses until a top-up covers the difference, so there are no surprise invoices.</p>
+          </div>
+          <div class="pricing-faq__item" data-reveal="up">
+            <h3 class="pricing-faq__question">Can we mix the two models?</h3>
+            <p class="pricing-faq__answer">Yes. Many clients start with a single Per Project engagement, then move to a Credit Bank once the pipeline becomes ongoing.</p>
+          </div>
+          <div class="pricing-faq__item" data-reveal="up">
+            <h3 class="pricing-faq__question">How do we actually pay?</h3>
+            <p class="pricing-faq__answer">There's no online checkout. Per Project work is split 50% to begin, 50% on delivery; Credit Bank packages are prepaid in full before activation. Both are by bank transfer, arranged once we've agreed scope.</p>
+          </div>
+          <div class="pricing-faq__item" data-reveal="up">
+            <h3 class="pricing-faq__question">What's your cancellation policy?</h3>
+            <p class="pricing-faq__answer">Deposits and prepaid Credit Bank packages are non-refundable once a project is underway. Full details are in our <a href="terms.html">Terms of Use</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing call to action -->
+    <section class="cta-band" aria-labelledby="cta-band-title">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__title" id="cta-band-title" data-reveal="lines"><span class="line"><span class="line__inner">Still deciding? <span class="accent">Let's talk.</span></span></span></h2>
+        <a class="btn btn--soft cta-band__button" href="contact.html" data-reveal="up">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2024 HiCircus Studio. Digital curation for elite visualization.</p>
+        <ul class="site-footer__links" aria-label="Social and legal">
+          <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/hicircus-studio" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@hicircus.studio" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@hicircus.studio" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+        <a class="icon-circle icon-circle--ghost site-footer__top-link" href="#top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 21.3V3M2.8 12.2 12 3l9.2 9.2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

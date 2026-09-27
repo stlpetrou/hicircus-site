@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Walking Through a Space Before It Is Built — HiCircus Studio Journal</title>
+  <meta name="description" content="Immersive walkthroughs let clients feel scale, sightlines and materials long before construction starts. What it takes to prepare a model for VR.">
+  <meta name="theme-color" content="#1d1b19">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("js-reveal");
+      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container site-header__bar">
+      <a class="site-header__logo" href="index.html" aria-label="HiCircus Studio — home">
+        <img src="assets/images/hicircus-logo-light.svg" alt="HiCircus Studio" width="132" height="40">
+      </a>
+
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="site-header__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="site-nav__link" href="about.html">About</a></li>
+          <li><a class="site-nav__link" href="blog.html" aria-current="page">Blog</a></li>
+          <li><a class="site-nav__link" href="pricing.html">Pricing</a></li>
+        </ul>
+        <a class="btn btn--soft site-nav__cta" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="page-hero__eyebrow">Virtual Reality</p>
+        <h1 class="page-hero__title" id="page-title"><span class="line"><span class="line__inner">Walking a Space</span></span> <span class="line"><span class="line__inner">Before It's Built</span></span></h1>
+        <p class="page-hero__lead">Immersive walkthroughs let clients feel scale, sightlines and materials long before construction starts.</p>
+        <p class="page-hero__meta">Virtual Reality &middot; <time datetime="2026-08">August 2026</time></p>
+      </div>
+    </section>
+
+    <figure class="about-band" data-band>
+      <img class="about-band__image" src="assets/images/etheric-residence-facade.webp" width="1932" height="1350" loading="lazy" alt="Angular white façade with deep-set windows">
+    </figure>
+
+    <article class="post-article">
+      <div class="container post-article__body">
+        <p>A floor plan tells you a room is five metres wide. It doesn't tell you what five metres feels like from the sofa, looking toward a window wall at sunset. That gap between drawn dimensions and felt space is exactly what a walkthrough closes — and it's why VR has become one of the fastest ways to catch a design problem while it's still cheap to fix.</p>
+
+        <h2>Building for Real-Time</h2>
+        <p>A render built to be beautiful in a single still isn't automatically ready to be walked through. Every surface, texture and light source has to perform in real time, at a stable frame rate, from any angle a visitor chooses — not just the one camera position we'd normally light for. That means rebuilding the scene with real-time engines in mind from the start: baking lighting where we can, optimizing geometry without losing the details that sell the material, and testing the walkthrough on the actual headset it will ship on, not just a desktop preview.</p>
+
+        <h2>What Clients Actually Test</h2>
+        <p>Once people put the headset on, they stop asking about finishes and start asking practical questions: can I see the kitchen island from the front door, does the corridor feel tight with two people passing, how much daylight actually reaches the back bedroom at 4pm. Those are the questions a plan and a render both struggle to answer honestly.</p>
+        <p>Letting a client — or their own buyer — stand in a space before it exists turns abstract approval into a confident decision, and it's far cheaper to move a wall in a headset than on site.</p>
+      </div>
+    </article>
+
+    <nav class="project-back" aria-label="Back to journal">
+      <a class="work__more-link" href="blog.html">Back to Studio Notes</a>
+    </nav>
+
+    <!-- Closing call to action -->
+    <section class="cta-band" aria-labelledby="cta-band-title">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__title" id="cta-band-title" data-reveal="lines"><span class="line"><span class="line__inner">Have a project <span class="accent">in mind?</span></span></span></h2>
+        <a class="btn btn--soft cta-band__button" href="contact.html" data-reveal="up">Start a Conversation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2024 HiCircus Studio. Digital curation for elite visualization.</p>
+        <ul class="site-footer__links" aria-label="Social and legal">
+          <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/hicircus-studio" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@hicircus.studio" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@hicircus.studio" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+        <a class="icon-circle icon-circle--ghost site-footer__top-link" href="#top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 21.3V3M2.8 12.2 12 3l9.2 9.2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
