@@ -2890,15 +2890,15 @@ main {
     background:
       radial-gradient(120% 55% at 100% 0%, rgba(245, 224, 186, 0.12), transparent 62%),
       var(--ink);
-    opacity: 0;
+    /* The panel is opaque the moment it appears (no opacity fade, which would
+       let the page bleed through); the menu links slide up to reveal it. */
     visibility: hidden;
-    transition: opacity 0.4s var(--ease), visibility 0s linear 0.4s;
+    transition: visibility 0s linear 0.6s;
   }
 
   .site-header.is-open .site-nav {
-    opacity: 1;
     visibility: visible;
-    transition: opacity 0.4s var(--ease);
+    transition: visibility 0s;
   }
 
   .site-nav__list {

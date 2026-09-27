@@ -1,2 +1,4 @@
+# Staging build — keep out of search indexes while the client reviews it.
+# For the production domain, revert to:  User-agent: *  /  Allow: /
 User-agent: *
-Allow: /
+Disallow: /

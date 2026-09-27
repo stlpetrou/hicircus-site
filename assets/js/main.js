@@ -54,6 +54,22 @@
     window.addEventListener("scroll", updateHeaderScrolled, { passive: true });
   }
 
+  // Back-to-top ------------------------------------------------------------
+  // The back-to-top button, the logo and the "Home" link all point at #top,
+  // which sits on the fixed header. A browser can't scroll to an element that
+  // never leaves the viewport, so the native jump does nothing — scroll the
+  // window to the very top ourselves instead.
+  Array.prototype.forEach.call(document.querySelectorAll('a[href="#top"]'), function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+      if (window.history && history.replaceState) {
+        history.replaceState(null, "", location.pathname + location.search);
+      }
+    });
+  });
+
   // Hero background video --------------------------------------------------
   // The pause button stops all hero motion (video and word swap); the same
   // happens when the hero is off screen or the visitor prefers reduced motion.
@@ -665,7 +681,10 @@
   var siteFooter = document.querySelector(".site-footer");
 
   if (siteFooter) {
-    siteFooter.addEventListener("focusin", function () {
+    siteFooter.addEventListener("focusin", function (event) {
+      // The back-to-top button lives in the footer but sends you up, not down —
+      // don't drag the page to the end when it takes focus.
+      if (event.target.closest(".site-footer__top-link")) return;
       var end = document.documentElement.scrollHeight - window.innerHeight;
       if (window.scrollY < end - 1) {
         var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
