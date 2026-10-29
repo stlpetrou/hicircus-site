@@ -5,17 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio — HiCircus Studio</title>
   <meta name="description" content="Architectural visualization, virtual reality and brand strategy projects by HiCircus Studio.">
-  <meta name="theme-color" content="#1d1b19">
+  <meta name="theme-color" content="#0d0d0d">
   <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <script>
-    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
-    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
-      document.documentElement.classList.add("js-reveal");
-      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
-    }
-  </script>
+  <link rel="preload" href="assets/fonts/playfair-display-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -51,7 +45,7 @@
       <div class="container">
         <p class="page-hero__eyebrow">Our Work</p>
         <h1 class="page-hero__title" id="page-title"><span class="line"><span class="line__inner">Portfolio</span></span></h1>
-        <p class="page-hero__lead">Architecture, interiors and places, visualized before they exist.</p>
+        <p class="page-hero__lead">We build worlds, not deliverables.</p>
       </div>
     </section>
 
@@ -80,7 +74,7 @@
           <li class="project-card" id="monolith-atelier" data-category="virtual-reality">
             <article aria-labelledby="monolith-atelier-title">
               <div class="project-card__media">
-                <img class="project-card__image" src="assets/images/etheric-residence-facade.webp" width="1932" height="1350" loading="lazy" alt="Angular white façade with deep-set windows">
+                <img class="project-card__image" src="assets/images/etheric-residence-facade.webp" width="2400" height="1677" loading="lazy" alt="Angular white façade with deep-set windows">
               </div>
               <p class="project-card__meta"><span>02</span><span>Virtual Reality</span></p>
               <h2 class="project-card__title" id="monolith-atelier-title">Monolith Atelier</h2>
@@ -89,7 +83,7 @@
           <li class="project-card" id="aurora-tower" data-category="brand-strategy">
             <article aria-labelledby="aurora-tower-title">
               <div class="project-card__media">
-                <img class="project-card__image" src="assets/images/etheric-residence-glass.webp" width="1648" height="1986" loading="lazy" alt="Glass tower corner lit from within at dusk, viewed from below">
+                <img class="project-card__image" src="assets/images/etheric-residence-glass.webp" width="2400" height="2892" loading="lazy" alt="Glass tower corner lit from within at dusk, viewed from below">
               </div>
               <p class="project-card__meta"><span>03</span><span>Brand Strategy</span></p>
               <h2 class="project-card__title" id="aurora-tower-title">Aurora Tower</h2>
@@ -107,7 +101,7 @@
           <li class="project-card" id="aurum-gallery" data-category="visualization">
             <article aria-labelledby="aurum-gallery-title">
               <div class="project-card__media">
-                <img class="project-card__image" src="assets/images/service-architectural-visualization.webp" width="512" height="640" loading="lazy" alt="Wireframe skull rendered in glowing gold mesh">
+                <img class="project-card__image" src="assets/images/service-architectural-visualization.webp" width="1024" height="1280" loading="lazy" alt="Wireframe skull rendered in glowing gold mesh">
               </div>
               <p class="project-card__meta"><span>05</span><span>Visualization</span></p>
               <h2 class="project-card__title" id="aurum-gallery-title">Aurum Gallery</h2>
@@ -116,7 +110,7 @@
           <li class="project-card" id="lumen-immersive" data-category="virtual-reality">
             <article aria-labelledby="lumen-immersive-title">
               <div class="project-card__media">
-                <img class="project-card__image" src="assets/images/service-virtual-reality.webp" width="576" height="384" loading="lazy" alt="Figure wearing a virtual reality headset in cool blue light">
+                <img class="project-card__image" src="assets/images/service-virtual-reality.webp" width="2304" height="1536" loading="lazy" alt="Figure wearing a virtual reality headset in cool blue light">
               </div>
               <p class="project-card__meta"><span>06</span><span>Virtual Reality</span></p>
               <h2 class="project-card__title" id="lumen-immersive-title">Lumen Immersive</h2>
@@ -125,7 +119,7 @@
           <li class="project-card" id="maison-signature" data-category="brand-strategy">
             <article aria-labelledby="maison-signature-title">
               <div class="project-card__media">
-                <img class="project-card__image" src="assets/images/service-brand-strategy.webp" width="576" height="577" loading="lazy" alt="Brushed-metal button engraved with the word Branding">
+                <img class="project-card__image" src="assets/images/service-brand-strategy.webp" width="1150" height="1152" loading="lazy" alt="Brushed-metal button engraved with the word Branding">
               </div>
               <p class="project-card__meta"><span>07</span><span>Brand Strategy</span></p>
               <h2 class="project-card__title" id="maison-signature-title">Maison Signature</h2>
@@ -145,7 +139,7 @@
     <div class="container">
       <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
       <div class="site-footer__bottom">
-        <p class="site-footer__copy">© 2026 HiCircus Studio. Digital curation for elite visualization.</p>
+        <p class="site-footer__copy">© 2026 HiCircus Studio. One wheel. Every world.</p>
         <ul class="site-footer__links" aria-label="Social and legal">
           <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>

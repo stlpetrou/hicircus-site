@@ -5,17 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Why We Render at Dusk — HiCircus Studio Journal</title>
   <meta name="description" content="Blue hour gives a building its warmest story. How HiCircus Studio plans light before placing a camera.">
-  <meta name="theme-color" content="#1d1b19">
+  <meta name="theme-color" content="#0d0d0d">
   <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <script>
-    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
-    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
-      document.documentElement.classList.add("js-reveal");
-      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
-    }
-  </script>
+  <link rel="preload" href="assets/fonts/playfair-display-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -56,7 +50,7 @@
       </div>
     </section>
 
-    <figure class="about-band" data-band>
+    <figure class="about-band">
       <img class="about-band__image" src="assets/images/etheric-residence-night.webp" width="3360" height="1416" loading="lazy" alt="Etheric Residence at night, lit from within under a deep blue sky">
     </figure>
 
@@ -82,8 +76,8 @@
     <!-- Closing call to action -->
     <section class="cta-band" aria-labelledby="cta-band-title">
       <div class="container cta-band__inner">
-        <h2 class="cta-band__title" id="cta-band-title" data-reveal="lines"><span class="line"><span class="line__inner">Have a project <span class="accent">in mind?</span></span></span></h2>
-        <a class="btn btn--soft cta-band__button" href="contact.html" data-reveal="up">Start a Conversation</a>
+        <h2 class="cta-band__title" id="cta-band-title"><span class="line"><span class="line__inner">Have a project <span class="accent">in mind?</span></span></span></h2>
+        <a class="btn btn--soft cta-band__button" href="contact.html">Start a Conversation</a>
       </div>
     </section>
 
@@ -93,7 +87,7 @@
     <div class="container">
       <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
       <div class="site-footer__bottom">
-        <p class="site-footer__copy">© 2026 HiCircus Studio. Digital curation for elite visualization.</p>
+        <p class="site-footer__copy">© 2026 HiCircus Studio. One wheel. Every world.</p>
         <ul class="site-footer__links" aria-label="Social and legal">
           <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>

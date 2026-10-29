@@ -5,17 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pricing — HiCircus Studio</title>
   <meta name="description" content="Two ways to work with HiCircus Studio: a single fixed-price project, or a Credit Bank package for ongoing architecture, product, motion and AI visualization work.">
-  <meta name="theme-color" content="#1d1b19">
+  <meta name="theme-color" content="#0d0d0d">
   <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <script>
-    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
-    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
-      document.documentElement.classList.add("js-reveal");
-      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
-    }
-  </script>
+  <link rel="preload" href="assets/fonts/playfair-display-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -59,12 +53,12 @@
     <section class="pricing" aria-labelledby="pricing-title">
       <div class="container">
         <div class="pricing__head">
-          <p class="eyebrow" data-reveal="up">Choose Your Path</p>
-          <h2 class="pricing__title" id="pricing-title" data-reveal="lines"><span class="line"><span class="line__inner">Per Project or</span></span> <span class="line"><span class="line__inner">Credit Bank</span></span></h2>
+          <p class="eyebrow">Choose Your Path</p>
+          <h2 class="pricing__title" id="pricing-title"><span class="line"><span class="line__inner">Per Project or</span></span> <span class="line"><span class="line__inner">Credit Bank</span></span></h2>
         </div>
 
         <div class="pricing__grid">
-          <article class="pricing-card" data-reveal="up">
+          <article class="pricing-card">
             <p class="pricing-card__label">Per Project</p>
             <p class="pricing-card__price">One Brief, One Price</p>
             <p class="pricing-card__note">For a single, self-contained deliverable — a hero render, a short film, a VR walkthrough. Scope and cost are fixed before any work begins.</p>
@@ -77,7 +71,7 @@
             <a class="btn btn--soft" href="contact.html">Request a Quote</a>
           </article>
 
-          <article class="pricing-card" data-reveal="up">
+          <article class="pricing-card">
             <p class="pricing-card__label">Credit Bank</p>
             <p class="pricing-card__price">Buy Time, Spend Flexibly</p>
             <p class="pricing-card__note">For studios and developers with an ongoing pipeline. Prepay a balance of studio hours once, then draw on it project after project.</p>
@@ -109,22 +103,22 @@
     <section class="credits-steps" aria-labelledby="credits-steps-title">
       <div class="container">
         <div class="credits-steps__head">
-          <p class="eyebrow" data-reveal="up">Credit Bank, Explained</p>
-          <h2 class="credits-steps__title" id="credits-steps-title" data-reveal="lines"><span class="line"><span class="line__inner">How It Works</span></span></h2>
+          <p class="eyebrow">Credit Bank, Explained</p>
+          <h2 class="credits-steps__title" id="credits-steps-title"><span class="line"><span class="line__inner">How It Works</span></span></h2>
           <p class="pricing__lead">One Credit represents one hour of dedicated studio time, billed in half-hour increments. It's a way to prepay for a block of our time and spend it across as many or as few deliverables as your pipeline needs.</p>
         </div>
         <ol class="credits-steps__list">
-          <li data-reveal="up">
+          <li>
             <p class="credits-step__index">01</p>
             <h3 class="credits-step__title">Send your brief</h3>
             <p class="credits-step__text">Tell us what you need. We assess it and send back an estimate of the credits required plus a delivery timeline.</p>
           </li>
-          <li data-reveal="up">
+          <li>
             <p class="credits-step__index">02</p>
             <h3 class="credits-step__title">Approve &amp; we begin</h3>
             <p class="credits-step__text">Confirm the estimate and timeline in writing and we start, drawing down your balance as the work happens. Smaller ad-hoc requests are deducted directly once done.</p>
           </li>
-          <li data-reveal="up">
+          <li>
             <p class="credits-step__index">03</p>
             <h3 class="credits-step__title">Top up or roll over</h3>
             <p class="credits-step__text">Running low mid-project? Top up to cover the difference. Upgrade to a larger package before your current one expires and any unused credits carry over.</p>
@@ -137,31 +131,31 @@
     <section class="pricing-faq" aria-labelledby="pricing-faq-title">
       <div class="container">
         <div class="pricing-faq__head">
-          <p class="eyebrow" data-reveal="up">Good to Know</p>
-          <h2 class="pricing-faq__title" id="pricing-faq-title" data-reveal="lines"><span class="line"><span class="line__inner">Questions</span></span></h2>
+          <p class="eyebrow">Good to Know</p>
+          <h2 class="pricing-faq__title" id="pricing-faq-title"><span class="line"><span class="line__inner">Questions</span></span></h2>
         </div>
         <div class="pricing-faq__list">
-          <div class="pricing-faq__item" data-reveal="up">
+          <div class="pricing-faq__item">
             <h3 class="pricing-faq__question">What exactly is a credit?</h3>
             <p class="pricing-faq__answer">One Credit equals one hour of studio time under normal working hours, billed in 30-minute (0.5 credit) increments — whether that's a quick support request or time logged against a larger project.</p>
           </div>
-          <div class="pricing-faq__item" data-reveal="up">
+          <div class="pricing-faq__item">
             <h3 class="pricing-faq__question">Do credits expire?</h3>
             <p class="pricing-faq__answer">Yes. 20 and 40-credit packages are valid for 2 months from activation; 80-credit and larger packages for 3 months. Unused credits lapse at the end of that window — unless you upgrade to a larger package before it expires, in which case any remaining balance carries over.</p>
           </div>
-          <div class="pricing-faq__item" data-reveal="up">
+          <div class="pricing-faq__item">
             <h3 class="pricing-faq__question">What if a project runs over my balance?</h3>
             <p class="pricing-faq__answer">We'll flag it before you go over, never after. Work pauses until a top-up covers the difference, so there are no surprise invoices.</p>
           </div>
-          <div class="pricing-faq__item" data-reveal="up">
+          <div class="pricing-faq__item">
             <h3 class="pricing-faq__question">Can we mix the two models?</h3>
             <p class="pricing-faq__answer">Yes. Many clients start with a single Per Project engagement, then move to a Credit Bank once the pipeline becomes ongoing.</p>
           </div>
-          <div class="pricing-faq__item" data-reveal="up">
+          <div class="pricing-faq__item">
             <h3 class="pricing-faq__question">How do we actually pay?</h3>
             <p class="pricing-faq__answer">There's no online checkout. Per Project work is split 50% to begin, 50% on delivery; Credit Bank packages are prepaid in full before activation. Both are by bank transfer, arranged once we've agreed scope.</p>
           </div>
-          <div class="pricing-faq__item" data-reveal="up">
+          <div class="pricing-faq__item">
             <h3 class="pricing-faq__question">What's your cancellation policy?</h3>
             <p class="pricing-faq__answer">Deposits and prepaid Credit Bank packages are non-refundable once a project is underway. Full details are in our <a href="terms.html">Terms of Use</a>.</p>
           </div>
@@ -172,8 +166,8 @@
     <!-- Closing call to action -->
     <section class="cta-band" aria-labelledby="cta-band-title">
       <div class="container cta-band__inner">
-        <h2 class="cta-band__title" id="cta-band-title" data-reveal="lines"><span class="line"><span class="line__inner">Still deciding? <span class="accent">Let's talk.</span></span></span></h2>
-        <a class="btn btn--soft cta-band__button" href="contact.html" data-reveal="up">Get in Touch</a>
+        <h2 class="cta-band__title" id="cta-band-title"><span class="line"><span class="line__inner">Still deciding? <span class="accent">Let's talk.</span></span></span></h2>
+        <a class="btn btn--soft cta-band__button" href="contact.html">Get in Touch</a>
       </div>
     </section>
 
@@ -183,7 +177,7 @@
     <div class="container">
       <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
       <div class="site-footer__bottom">
-        <p class="site-footer__copy">© 2026 HiCircus Studio. Digital curation for elite visualization.</p>
+        <p class="site-footer__copy">© 2026 HiCircus Studio. One wheel. Every world.</p>
         <ul class="site-footer__links" aria-label="Social and legal">
           <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>

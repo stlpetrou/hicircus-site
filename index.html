@@ -3,20 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HiCircus Studio — Luxury Architectural Visualization</title>
-  <meta name="description" content="HiCircus Studio crafts elite 3D visualization, motion, VR and AI-assisted renders for architecture, products and luxury developments.">
-  <meta name="theme-color" content="#1d1b19">
+  <title>HiCircus Studio — One Wheel. Every World.</title>
+  <meta name="description" content="HiCircus Studio is an idea-led creative studio in Athens. The idea leads, the medium follows: 3D, video, motion and concept, whatever the idea demands.">
+  <meta name="theme-color" content="#0d0d0d">
   <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="preload" href="assets/fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/playfair-display-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/images/hero-poster.webp" as="image" type="image/webp">
-  <script>
-    /* Hide the scroll-animated content until main.js takes over; it is shown anyway after 3 s. */
-    if (window.matchMedia && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
-      document.documentElement.classList.add("js-reveal");
-      setTimeout(function () { if (!window.hicircusReveal) document.documentElement.classList.remove("js-reveal"); }, 3000);
-    }
-  </script>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -60,8 +54,9 @@
 
       <div class="container hero__grid">
         <div class="hero__copy">
-          <h1 class="hero__title" id="hero-title"><span class="line"><span class="line__inner">Welcome to</span></span> <span class="line"><span class="line__inner">the <span class="accent" data-swap="main|next|star|grand|final">main</span></span></span> <span class="line"><span class="line__inner"><span class="accent">act.</span></span></span></h1>
-          <p class="hero__lead">We break boundaries to craft designs that stand out. We blend strategy with digital artistry to captivate audiences.</p>
+          <p class="eyebrow hero__eyebrow">HiCircus Studio — Athens</p>
+          <h1 class="hero__title" id="hero-title"><span class="line"><span class="line__inner">One Wheel.</span></span> <span class="line"><span class="line__inner"><span class="accent">Every World.</span></span></span></h1>
+          <p class="hero__lead">We break boundaries to craft images that shouldn’t exist. Three questions before every project: who is this for, what obvious version did we reject, and what world does this create?</p>
           <div class="hero__actions">
             <a class="hero__scroll" href="#work">
               <span class="icon-circle icon-circle--outline" aria-hidden="true">
@@ -79,168 +74,193 @@
       </button>
     </section>
 
+    <!-- Manifesto -->
+    <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+      <div class="container">
+        <h2 class="eyebrow manifesto__title" id="manifesto-title">The HiCircus Manifesto</h2>
+        <ol class="manifesto__list">
+          <li class="manifesto__item"><p>We greet you before we brief you. Because <em>who you are</em> shapes what we build — more than any document ever will.</p></li>
+          <li class="manifesto__item"><p>We ride one wheel. Not because it’s harder — because <em>it keeps us honest</em>. Stop moving and you fall. So we never stop.</p></li>
+          <li class="manifesto__item"><p>We refuse to specialize. Specialization is a cage. <em>The idea leads. The medium follows.</em> Always.</p></li>
+          <li class="manifesto__item"><p>We build worlds, not deliverables. You came with a problem. <em>We came back with a world</em> built around who you actually are.</p></li>
+        </ol>
+      </div>
+    </section>
+
     <!-- Selected works -->
     <section class="work" id="work" aria-labelledby="work-title">
       <div class="container work__head">
         <div>
-          <p class="eyebrow" data-reveal="up">Selected Works</p>
-          <h2 class="work__title" id="work-title" data-reveal="lines"><span class="line"><span class="line__inner">Future</span></span> <span class="line"><span class="line__inner">Projects</span></span></h2>
+          <p class="eyebrow">Selected Works</p>
+          <h2 class="work__title" id="work-title"><span class="line"><span class="line__inner">Future</span></span> <span class="line"><span class="line__inner">Projects</span></span></h2>
         </div>
-        <p class="work__intro" data-reveal="up">Curated digital experiences designed to redefine expectations in luxury visualization.</p>
+        <p class="work__intro">We build worlds, not deliverables.</p>
       </div>
 
-      <div class="showcase" data-showcase>
-        <div class="showcase__sticky">
-          <article class="showcase__panel">
-            <div class="showcase__layer showcase__layer--surface">
-              <div class="showcase__layer-inner">
-                <img class="showcase__bg" src="assets/images/etheric-residence-night-blur.webp" alt="" loading="lazy">
-                <div class="container showcase__grid">
-                  <div class="showcase__info">
-                    <p class="showcase__count">01 / 03</p>
-                    <h3 class="showcase__title">Etheric Residence</h3>
-                    <div class="showcase__row">
-                      <span class="showcase__tag">01. Visualization</span>
-                      <a class="project__link" href="etheric-residence.html">View Project</a>
-                    </div>
-                  </div>
-                </div>
+      <div class="showcase">
+        <article class="showcase__panel">
+          <div class="showcase__info">
+            <p class="showcase__count"><span class="showcase__num">01</span><span class="showcase__of">/ 03</span></p>
+            <div>
+              <h3 class="showcase__title">Etheric Residence</h3>
+              <div class="showcase__row">
+                <span class="showcase__tag">01. Visualization</span>
+                <a class="project__link" href="etheric-residence.html">View Project</a>
               </div>
             </div>
-            <div class="showcase__layer showcase__layer--media">
-              <div class="showcase__layer-inner">
-                <div class="container showcase__grid">
-                  <div class="showcase__frame" data-trail-from="1.3 0.25 0.38">
-                    <img class="showcase__image" src="assets/images/etheric-residence-night.webp" alt="Etheric Residence at night — warm light glowing through tall windows of a modern stone villa" loading="lazy">
-                  </div>
-                </div>
+          </div>
+          <figure class="showcase__media">
+            <img class="showcase__image" src="assets/images/etheric-residence-night.webp" width="3360" height="1416" alt="Etheric Residence at night — warm light glowing through tall windows of a modern stone villa" loading="lazy" style="object-position: 62% 50%">
+          </figure>
+        </article>
+        <article class="showcase__panel">
+          <div class="showcase__info">
+            <p class="showcase__count"><span class="showcase__num">02</span><span class="showcase__of">/ 03</span></p>
+            <div>
+              <h3 class="showcase__title">Monolith Atelier</h3>
+              <div class="showcase__row">
+                <span class="showcase__tag">02. Virtual Reality</span>
+                <a class="project__link" href="portfolio.html#monolith-atelier">View Project</a>
               </div>
             </div>
-          </article>
-          <article class="showcase__panel">
-            <div class="showcase__layer showcase__layer--surface">
-              <div class="showcase__layer-inner">
-                <img class="showcase__bg" src="assets/images/etheric-residence-facade-blur.webp" alt="" loading="lazy">
-                <div class="container showcase__grid">
-                  <div class="showcase__info">
-                    <p class="showcase__count">02 / 03</p>
-                    <h3 class="showcase__title">Monolith Atelier</h3>
-                    <div class="showcase__row">
-                      <span class="showcase__tag">02. Virtual Reality</span>
-                      <a class="project__link" href="portfolio.html#monolith-atelier">View Project</a>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <figure class="showcase__media">
+            <img class="showcase__image" src="assets/images/etheric-residence-facade.webp" width="2400" height="1677" alt="Angular white façade with deep-set windows" loading="lazy">
+          </figure>
+        </article>
+        <article class="showcase__panel">
+          <div class="showcase__info">
+            <p class="showcase__count"><span class="showcase__num">03</span><span class="showcase__of">/ 03</span></p>
+            <div>
+              <h3 class="showcase__title">Aurora Tower</h3>
+              <div class="showcase__row">
+                <span class="showcase__tag">03. Brand Strategy</span>
+                <a class="project__link" href="portfolio.html#aurora-tower">View Project</a>
               </div>
             </div>
-            <div class="showcase__layer showcase__layer--media">
-              <div class="showcase__layer-inner">
-                <div class="container showcase__grid">
-                  <div class="showcase__frame">
-                    <img class="showcase__image" src="assets/images/etheric-residence-facade.webp" alt="Angular white façade with deep-set windows" loading="lazy">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="showcase__panel">
-            <div class="showcase__layer showcase__layer--surface">
-              <div class="showcase__layer-inner">
-                <img class="showcase__bg" src="assets/images/etheric-residence-glass-blur.webp" alt="" loading="lazy">
-                <div class="container showcase__grid">
-                  <div class="showcase__info">
-                    <p class="showcase__count">03 / 03</p>
-                    <h3 class="showcase__title">Aurora Tower</h3>
-                    <div class="showcase__row">
-                      <span class="showcase__tag">03. Brand Strategy</span>
-                      <a class="project__link" href="portfolio.html#aurora-tower">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="showcase__layer showcase__layer--media">
-              <div class="showcase__layer-inner">
-                <div class="container showcase__grid">
-                  <div class="showcase__frame">
-                    <img class="showcase__image" src="assets/images/etheric-residence-glass.webp" alt="Glass tower corner lit from within at dusk, viewed from below" loading="lazy">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
+          </div>
+          <figure class="showcase__media">
+            <img class="showcase__image" src="assets/images/etheric-residence-glass.webp" width="2400" height="2892" alt="Glass tower corner lit from within at dusk, viewed from below" loading="lazy">
+          </figure>
+        </article>
       </div>
 
-      <div class="work__more" data-reveal="up">
+      <div class="work__more">
         <a class="work__more-link" href="portfolio.html">Explore More Projects</a>
       </div>
     </section>
 
     <!-- Expertise -->
     <section class="expertise" id="expertise" aria-labelledby="expertise-title">
-      <div class="expertise__inner">
-        <div class="expertise__intro">
-          <div class="expertise__sticky">
-            <h2 class="expertise__title" id="expertise-title" data-reveal="lines"><span class="line"><span class="line__inner">Our</span></span> <span class="line"><span class="line__inner">Expertise</span></span></h2>
-            <p class="expertise__lead" data-reveal="up">We push the boundaries of what's possible in the digital realm.</p>
-            <div class="expertise__nav" data-reveal="up">
-              <button class="icon-circle icon-circle--muted" type="button" data-service-step="-1" aria-label="Previous service">
-                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M24 12H1M8.6 3.6 0.9 12l7.7 8.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-              </button>
-              <button class="icon-circle icon-circle--muted" type="button" data-service-step="1" aria-label="Next service">
-                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M0 12h23M15.4 3.6l7.7 8.4-7.7 8.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-              </button>
-            </div>
+      <div class="container">
+        <div class="expertise__head">
+          <div>
+            <p class="eyebrow">No Specialty</p>
+            <h2 class="expertise__title" id="expertise-title">The idea leads. <span class="accent">The medium follows.</span></h2>
           </div>
+          <p class="expertise__lead">Specialization is a cage. We work in 3D, video, motion, concept — whatever the idea demands.</p>
         </div>
 
-        <div class="services">
-          <a class="service service--one" href="architecture.html" id="service-1" data-reveal="service">
-            <img class="service__image" src="assets/images/service-architectural-visualization.webp" width="512" height="640" loading="lazy" alt="Wireframe skull rendered in glowing gold mesh">
-            <div class="service__body">
-              <p class="service__index"><span>01</span></p>
-              <h3 class="service__title">Architectu<span class="brk"></span>re</h3>
-              <p class="service__text">3D ArchViz, interiors, exteriors and real estate visualization — elite renders that breathe life into blueprints.</p>
-            </div>
-          </a>
+        <ol class="mediums">
+          <li>
+            <a class="medium" href="architecture.html" id="service-1">
+              <span class="medium__num" aria-hidden="true">01</span>
+              <div class="medium__body">
+                <h3 class="medium__title">Architecture</h3>
+                <p class="medium__text">3D ArchViz, interiors, exteriors and real estate visualization — elite renders that breathe life into blueprints.</p>
+                <span class="medium__more">Explore</span>
+              </div>
+              <div class="medium__media">
+                <img class="medium__image" src="assets/images/etheric-residence-glass.webp" width="2400" height="2892" loading="lazy" alt="Glass tower corner lit from within at dusk, viewed from below" style="object-position: 50% 45%">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="medium" href="products.html" id="service-2">
+              <span class="medium__num" aria-hidden="true">02</span>
+              <div class="medium__body">
+                <h3 class="medium__title">Products</h3>
+                <p class="medium__text">Product CGI, animation and 360° views built to sell — no photo studio required.</p>
+                <span class="medium__more">Explore</span>
+              </div>
+              <div class="medium__media">
+                <img class="medium__image" src="assets/images/service-brand-strategy.webp" width="1150" height="1152" loading="lazy" alt="Brushed-metal button engraved with the word Branding">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="medium" href="motion.html" id="service-3">
+              <span class="medium__num" aria-hidden="true">03</span>
+              <div class="medium__body">
+                <h3 class="medium__title">Motion</h3>
+                <p class="medium__text">3D animation, architectural walkthroughs and motion graphics that carry a story through movement.</p>
+                <span class="medium__more">Explore</span>
+              </div>
+              <div class="medium__media">
+                <img class="medium__image" src="assets/images/hero-poster.webp" width="1920" height="1080" loading="lazy" alt="Flowing dark sculpture with glossy ribbons and small spheres">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="medium" href="immersive.html" id="service-4">
+              <span class="medium__num" aria-hidden="true">04</span>
+              <div class="medium__body">
+                <h3 class="medium__title">Immersive</h3>
+                <p class="medium__text">VR, 360° tours and interactive 3D that let clients walk through their future spaces before the first stone is laid.</p>
+                <span class="medium__more">Explore</span>
+              </div>
+              <div class="medium__media">
+                <img class="medium__image" src="assets/images/service-virtual-reality.webp" width="2304" height="1536" loading="lazy" alt="Figure wearing a virtual reality headset in cool blue light">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="medium" href="ai-visualization.html" id="service-5">
+              <span class="medium__num" aria-hidden="true">05</span>
+              <div class="medium__body">
+                <h3 class="medium__title">AI Visualization</h3>
+                <p class="medium__text">Photoreal concept renders generated fast, from a floor plan and a moodboard to finished direction in days.</p>
+                <span class="medium__more">Explore</span>
+              </div>
+              <div class="medium__media">
+                <img class="medium__image" src="assets/images/service-architectural-visualization.webp" width="1024" height="1280" loading="lazy" alt="Wireframe skull rendered in glowing gold mesh" style="object-position: 50% 35%">
+              </div>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-          <a class="service service--two" href="products.html" id="service-2" data-reveal="service">
-            <div class="service__body">
-              <p class="service__index"><span>02</span></p>
-              <h3 class="service__title">Products</h3>
-              <p class="service__text">Product CGI, animation and 360° views built to sell — no photo studio required.</p>
-            </div>
-            <img class="service__image" src="assets/images/service-brand-strategy.webp" width="576" height="577" loading="lazy" alt="Brushed-metal button engraved with the word Branding">
-          </a>
-
-          <a class="service service--three" href="motion.html" id="service-3" data-reveal="service">
-            <img class="service__image" src="assets/images/hero-poster.webp" width="1920" height="1080" loading="lazy" alt="Flowing dark sculpture with glossy ribbons and small spheres">
-            <div class="service__body">
-              <p class="service__index"><span>03</span></p>
-              <h3 class="service__title">Motion</h3>
-              <p class="service__text">3D animation, architectural walkthroughs and motion graphics that carry a story through movement.</p>
-            </div>
-          </a>
-
-          <a class="service service--two" href="immersive.html" id="service-4" data-reveal="service">
-            <div class="service__body">
-              <p class="service__index"><span>04</span></p>
-              <h3 class="service__title">Immersive</h3>
-              <p class="service__text">VR, 360° tours and interactive 3D that let clients walk through their future spaces before the first stone is laid.</p>
-            </div>
-            <img class="service__image" src="assets/images/service-virtual-reality.webp" width="576" height="384" loading="lazy" alt="Figure wearing a virtual reality headset in cool blue light">
-          </a>
-
-          <a class="service service--three" href="ai-visualization.html" id="service-5" data-reveal="service">
-            <img class="service__image" src="assets/images/etheric-residence-glass.webp" width="1648" height="1986" loading="lazy" alt="Glass tower corner lit from within at dusk, viewed from below">
-            <div class="service__body">
-              <p class="service__index"><span>05</span></p>
-              <h3 class="service__title">AI Visualization</h3>
-              <p class="service__text">Photoreal concept renders generated fast, from a floor plan and a moodboard to finished direction in days.</p>
-            </div>
-          </a>
-        </div>
+    <!-- Brand DNA -->
+    <section class="brand" id="brand" aria-labelledby="brand-title">
+      <div class="container">
+        <h2 class="eyebrow" id="brand-title">Brand DNA</h2>
+        <ol class="brand__grid">
+          <li class="brand__card">
+            <span class="brand__num" aria-hidden="true">01</span>
+            <h3 class="brand__name">The Greeting</h3>
+            <p class="brand__text">We see the person before we see the brief. Every client, every viewer, every follower is addressed by who they are — not what they need. This isn’t a tactic. It’s the foundation.</p>
+            <span class="brand__tag">Relationship first</span>
+          </li>
+          <li class="brand__card">
+            <span class="brand__num" aria-hidden="true">02</span>
+            <h3 class="brand__name">The Unicycle</h3>
+            <p class="brand__text">Balance through boldness, not caution. We don’t need the safety of convention to stay upright. Stop moving and you fall — so we never stop. Always evolving. Daring new territories.</p>
+            <span class="brand__tag">Bold forward motion</span>
+          </li>
+          <li class="brand__card">
+            <span class="brand__num" aria-hidden="true">03</span>
+            <h3 class="brand__name">The Circus</h3>
+            <p class="brand__text">A circus isn’t entertainment — it’s the suspension of the ordinary. You walk in and the rules change. We give clients and audiences permission for the fantastical. Fantasy takes over.</p>
+            <span class="brand__tag">Fantasy over formula</span>
+          </li>
+          <li class="brand__card">
+            <span class="brand__num" aria-hidden="true">04</span>
+            <h3 class="brand__name">No Specialty</h3>
+            <p class="brand__text">Specialization is a cage. The idea leads, the medium follows. We work in 3D, video, motion, concept — whatever the idea demands. The controversial eye is the only constant.</p>
+            <span class="brand__tag">Idea-led studio</span>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -249,14 +269,12 @@
       <div class="container">
         <div class="voices__inner">
           <div class="voices__head">
-            <h2 class="voices__title" id="voices-title" data-reveal="lines"><span class="line"><span class="line__inner">Echoes of</span></span> <span class="line"><span class="line__inner"><span class="accent">Excellence</span></span></span></h2>
-            <p class="voices__note" data-reveal="up">Real stories from the front row of innovation.</p>
+            <h2 class="voices__title" id="voices-title"><span class="line"><span class="line__inner">Echoes of</span></span> <span class="line"><span class="line__inner"><span class="accent">Excellence</span></span></span></h2>
+            <p class="voices__note">Real stories from the front row of innovation.</p>
           </div>
 
           <div class="voices__grid">
-            <span class="voices__watermark" aria-hidden="true">Voices</span>
-
-            <figure class="quote quote--feature" data-reveal="up">
+            <figure class="quote quote--feature">
               <svg class="quote__mark" viewBox="0 0 34.5 25" width="34.5" height="25" aria-hidden="true"><path fill="currentColor" d="M14.25 0.38C13.38 0.02 10.71 0.76 9.00 1.60C7.29 2.44 5.35 3.83 4.00 5.40C2.65 6.97 1.57 9.33 0.90 11.00C0.23 12.67 0.07 13.94 0.00 15.40C-0.07 16.86 -0.07 18.40 0.50 19.75C1.07 21.10 2.30 22.67 3.40 23.50C4.50 24.33 5.85 24.75 7.10 24.75C8.35 24.75 10.00 24.23 10.90 23.50C11.80 22.77 12.30 21.44 12.50 20.40C12.70 19.36 12.47 18.15 12.10 17.25C11.72 16.35 11.02 15.62 10.25 15.00C9.48 14.38 8.12 13.96 7.50 13.50C6.88 13.04 6.57 13.08 6.50 12.25C6.43 11.42 6.47 9.64 7.10 8.50C7.72 7.36 9.06 6.19 10.25 5.40C11.44 4.61 13.58 4.59 14.25 3.75C14.92 2.91 15.12 0.73 14.25 0.38ZM33.85 0.38C32.98 0.02 30.31 0.76 28.60 1.60C26.89 2.44 24.95 3.83 23.60 5.40C22.25 6.97 21.17 9.33 20.50 11.00C19.83 12.67 19.67 13.94 19.60 15.40C19.53 16.86 19.53 18.40 20.10 19.75C20.67 21.10 21.90 22.67 23.00 23.50C24.10 24.33 25.45 24.75 26.70 24.75C27.95 24.75 29.60 24.23 30.50 23.50C31.40 22.77 31.90 21.44 32.10 20.40C32.30 19.36 32.08 18.15 31.70 17.25C31.33 16.35 30.62 15.62 29.85 15.00C29.08 14.38 27.73 13.96 27.10 13.50C26.48 13.04 26.17 13.08 26.10 12.25C26.03 11.42 26.08 9.64 26.70 8.50C27.33 7.36 28.66 6.19 29.85 5.40C31.04 4.61 33.18 4.59 33.85 3.75C34.52 2.91 34.73 0.73 33.85 0.38Z"/></svg>
               <blockquote class="quote__text">
                 <p>They didn’t just render our lobby — they worked out exactly which hour of dusk to shoot it at. That one <span class="quote__highlight">image</span> did more for our pre-sales deck than the architect’s entire plan set.</p>
@@ -271,7 +289,7 @@
             </figure>
 
             <div class="voices__stack">
-              <figure class="quote quote--outline" data-reveal="up">
+              <figure class="quote quote--outline">
                 <blockquote class="quote__text"><p>"We sent them a half-finished model three weeks before a funding round. They came back with stills that made investors ask when they could move in."</p></blockquote>
                 <figcaption>
                   <span class="quote__name">Elena Rossi</span>
@@ -279,7 +297,7 @@
                 </figcaption>
               </figure>
 
-              <figure class="quote quote--dark" data-reveal="up">
+              <figure class="quote quote--dark">
                 <blockquote class="quote__text"><p>"We gave their AI visualization team nothing but a floor plan and a moodboard, and had photoreal concept views back in two days — fast enough to test three façades before we picked one."</p></blockquote>
                 <figcaption>
                   <span class="quote__name">Marcus Thorne</span>
@@ -289,7 +307,7 @@
             </div>
           </div>
 
-          <figure class="quote quote--wide" data-reveal="up">
+          <figure class="quote quote--wide">
             <blockquote class="quote__text"><p>"Every render read like it was shot on location, down to the way the concrete caught the light. Our sales gallery ran on their stills for eight months."</p></blockquote>
             <figcaption>
               <span class="quote__name">Sofia Lind</span>
@@ -304,9 +322,9 @@
     <section class="cta" id="contact" aria-labelledby="cta-title">
       <span class="cta__glow" aria-hidden="true"></span>
       <div class="container cta__inner">
-        <h2 class="cta__title" id="cta-title" data-reveal="lines"><span class="line"><span class="line__inner">Ready to bring your</span></span> <span class="line"><span class="line__inner">idea on <span class="accent">stage?</span></span></span></h2>
-        <p class="cta__lead" data-reveal="up">Tell us a few details and we'll take it from there.</p>
-        <a class="btn btn--primary" href="contact.html" data-reveal="up">Contact Us</a>
+        <h2 class="cta__title" id="cta-title"><span class="line"><span class="line__inner">Ready to bring your</span></span> <span class="line"><span class="line__inner">idea on <span class="accent">stage?</span></span></span></h2>
+        <p class="cta__lead">Tell us a few details and we'll take it from there.</p>
+        <a class="btn btn--primary" href="contact.html">Contact Us</a>
       </div>
     </section>
   </main>
@@ -315,7 +333,7 @@
     <div class="container">
       <div class="site-footer__wordmark" aria-hidden="true"><span>HiCircus Studio</span></div>
       <div class="site-footer__bottom">
-        <p class="site-footer__copy">© 2026 HiCircus Studio. Digital curation for elite visualization.</p>
+        <p class="site-footer__copy">© 2026 HiCircus Studio. One wheel. Every world.</p>
         <ul class="site-footer__links" aria-label="Social and legal">
           <li><a href="https://www.instagram.com/hicircus.studio/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.facebook.com/hicircus.studio" target="_blank" rel="noopener">Facebook</a></li>
