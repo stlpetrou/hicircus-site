@@ -82,7 +82,8 @@ assets/images/             Logo (SVG), hero poster, project photos, service imag
                            "night" render is a blocky source and only gets
                            cleaner edges. Send the original renders if they
                            exist: no upscaler can add real detail.
-assets/video/              hero-reel.mp4 (H.264, 22 s)
+assets/video/              hero-reel.mp4 (desktop, 16:9) + hero-reel-mobile.mp4
+                           (phones, vertical 9:16), H.264, ~23 s each
 
 DEPLOYMENT NOTE — STAGING
 --------------------------
@@ -184,7 +185,10 @@ fall / 3D / Motion / AI / The idea leads / logo). Poster:
 assets/images/hero-poster.webp (frame at 0.6 s). The reel has its own text, so
 it is shown uncropped (16:9) under the header with no copy of ours on top
 (the headline and lead sit in the "intro" section right below it) and a flat
-black 25% mask (.hero__shade in main.css). To replace it, export a muted MP4 with the same name.
+black 25% mask (.hero__shade in main.css). Phones (up to 767 px)
+load hero-reel-mobile.mp4 (vertical, 720x1280, ~2.5 MB) and its own poster,
+chosen in main.js, so only one file is downloaded. To replace either, export
+a muted MP4 with the same name.
 Behaviour: autoplays muted and loops, pauses automatically when the hero is
 scrolled out of view, has a pause/play button (bottom right) and stays paused
 for visitors who set "reduce motion" in their operating system.

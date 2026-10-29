@@ -83,6 +83,11 @@
   var videoToggle = document.querySelector(".hero__video-toggle");
 
   if (hero && video && videoToggle) {
+    // Phones get the vertical cut of the reel, so only one file is downloaded.
+    var narrow = window.matchMedia("(max-width: 767px)").matches;
+    if (narrow && video.dataset.posterNarrow) video.poster = video.dataset.posterNarrow;
+    video.src = narrow && video.dataset.srcNarrow ? video.dataset.srcNarrow : video.dataset.src;
+
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     var pausedByUser = reduceMotion.matches;
     var inView = true;

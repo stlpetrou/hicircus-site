@@ -2827,6 +2827,17 @@ main {
     --hc-card-p: 28px;
   }
 
+  /* Hero: the vertical reel, full-bleed behind the header like on desktop */
+  .hero {
+    height: min(100svh, 177.78vw);
+    padding-top: 0;
+  }
+
+  .hero__backdrop {
+    position: absolute;
+    aspect-ratio: auto;
+  }
+
   .intro__lead {
     font-size: 16px;
   }
