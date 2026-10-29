@@ -11,8 +11,8 @@
   <link rel="preload" href="assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/dm-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/images/hero-poster.webp" as="image" type="image/webp">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="assets/css/main.css?v=20261029b">
+  <script src="assets/js/main.js?v=20261029b" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,7 +43,7 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" aria-label="HiCircus Studio reel">
       <div class="hero__backdrop" aria-hidden="true">
         <video class="hero__video" autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/images/hero-poster.webp">
           <source src="assets/video/hero-reel.mp4" type="video/mp4">
@@ -51,26 +51,20 @@
         <span class="hero__shade"></span>
       </div>
 
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow hero__eyebrow">HiCircus Studio — Athens</p>
-          <h1 class="hero__title" id="hero-title"><span class="line"><span class="line__inner">One Wheel.</span></span> <span class="line"><span class="line__inner"><span class="accent">Every World.</span></span></span></h1>
-          <p class="hero__lead">We break boundaries to craft images that shouldn’t exist. Three questions before every project: who is this for, what obvious version did we reject, and what world does this create?</p>
-          <div class="hero__actions">
-            <a class="hero__scroll" href="#work">
-              <span class="icon-circle icon-circle--outline" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2.6V20.6M5.6 14.4 12 20.8l6.4-6.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-              </span>
-              <span class="hero__scroll-label">See our projects</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
       <button class="hero__video-toggle" type="button" aria-pressed="false" aria-label="Pause hero animation">
         <svg class="hero__video-icon hero__video-icon--pause" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="2"/></svg>
         <svg class="hero__video-icon hero__video-icon--play" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></svg>
       </button>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="intro__body">
+          <h1 class="intro__title" id="hero-title"><span class="line"><span class="line__inner">One Wheel.</span></span> <span class="line"><span class="line__inner"><span class="accent">Every World.</span></span></span></h1>
+          <p class="intro__lead">We break boundaries to craft images that shouldn’t exist. Three questions before every project: who is this for, what obvious version did we reject, and what world does this create?</p>
+        </div>
+      </div>
     </section>
 
     <!-- Manifesto -->

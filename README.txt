@@ -49,7 +49,8 @@ Deliberate deviations from the brief (to confirm with the client):
 
 STRUCTURE
 ---------
-index.html                 Homepage: hero (video), manifesto, selected works
+index.html                 Homepage: hero (reel only), intro (headline + lead),
+                           manifesto, selected works
                            (3 project panels), "No Specialty" expertise list
                            (5 mediums), Brand DNA, testimonials, call to
                            action, footer
@@ -181,8 +182,9 @@ File: assets/video/hero-reel.mp4 (H.264, 1920x1080, 30 fps, 22.5 s, ~4 MB, audio
 removed), supplied by the studio as a brand reel (Hi. / Stop moving and you
 fall / 3D / Motion / AI / The idea leads / logo). Poster:
 assets/images/hero-poster.webp (frame at 0.6 s). The reel has its own text, so
-the dark shade over it (.hero__shade in main.css) is what keeps the headline
-readable. To replace it, export a muted MP4 with the same name.
+it is shown uncropped (16:9) under the header with no copy of ours on top
+(the headline and lead sit in the "intro" section right below it) and a flat
+black 25% mask (.hero__shade in main.css). To replace it, export a muted MP4 with the same name.
 Behaviour: autoplays muted and loops, pauses automatically when the hero is
 scrolled out of view, has a pause/play button (bottom right) and stays paused
 for visitors who set "reduce motion" in their operating system.
